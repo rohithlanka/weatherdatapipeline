@@ -1,0 +1,1 @@
+select * from {{source ('pipeline1_db','weatherdata')}}

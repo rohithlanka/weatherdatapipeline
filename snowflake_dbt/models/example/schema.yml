@@ -1,0 +1,51 @@
+
+version: 2
+
+models:
+  - name: basic_weather
+    description: "A starter dbt model"
+    columns:
+      - name: place
+        description: "Place where the data is collected"
+        tests:
+          - not_null
+      - name: date
+        description: "date when the data is collected"
+        tests:
+          - not_null
+      - name: weather
+        description: "Basic weather condition of the pplace"
+        tests:
+          - not_null
+      - name: wind_speed
+        description: "wind speed of the place"
+        tests:
+          - not_null
+      - name: temp
+        description: "temperature of the place"
+        tests:
+          - not_null
+  - name: weather_date_speed_category
+    description: "classifying the wind speed"
+    columns:
+      - name: place
+        description: "Place where the data is collected"
+        tests:
+          - not_null
+      - name: date
+        description: "date when the data is collected"
+        tests:
+          - not_null
+      - name: weather
+        description: "Basic weather condition of the pplace"
+        tests:
+          - not_null
+      - name: wind_speed_category
+        description: "classified nwind speed of the place"
+        tests:
+          - not_null
+      - name: temp
+        description: "temperature of the place"
+        tests:
+          - not_null
+

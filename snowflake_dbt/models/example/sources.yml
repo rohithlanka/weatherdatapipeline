@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: pipeline1_db
+    description: "Raw data from the  snowflake pipeline_db database."
+    database: pipeline1_db
+    schema: public
+    tables:
+      - name: weatherdata
+        description: "List of few places and their weather conditions"
+      
